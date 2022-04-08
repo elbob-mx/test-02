@@ -16,21 +16,24 @@ html, body {
 } */
 
 a {
+  display: flex;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   color: aliceblue;
   margin: 0 30px 0 0 ;
+  transition: 0.6s;
 }
 
 a:hover {
+  display: flex;
   font-family: 'Courier New', Courier, monospace;
   color: black;
   font-weight: bold;
   font-style: italic;
   background-color: yellow;
-  padding: 1px 12% 12px 1px;
+  padding: 1vw 3vw 12px 1px;
   transition: 1s;
-  font-size: 1.6em;
+  font-size: 1.3rem;
   /* border-radius: 5px 5px 5px 5px; */
 }
 
@@ -49,53 +52,116 @@ ul:hover {
   background-color: #1ea39d;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  letter-spacing: 0.1em;
+  color: darkslategray;
+  padding: 10vh;
   margin: 0 0 40px 0;
-  padding: 100px;
-  transition: 1s;
+  transition: 0.8s;
+  font-size: 1.5vw;
 }
 
 .main-heading:hover {
-  background-color: #24928d;
+  background-color: #23c7bf;
   font-family: 'Courier New', Courier, monospace;
-  color: snow;
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
   text-align: center;
-  letter-spacing: 0.6em;
-  margin: 0 0 30px 0;
+  color: snow;
   padding: 120px;
-  transition: 1s;
+  margin: 0 0 30px 0;
+  transition: 0.8s;
 }
+
 
 .main-heading:active {
-  background-color: #23817d;
+  background-color: #00fff2;
   font-family: 'Courier New', Courier, monospace;
-  color: snow;
+  letter-spacing: 0.4em;
   text-align: center;
-  margin: 0 0 30px 0;
+  color: darkslategrey;
   padding: 120px;
-  transition: 1s;
+  margin: 0 0 30px 0;
+  transition: 0.8s;
 }
 
-@media screen and (max-width: 600px) {
+.main-heading > h1:hover {
+  background-color: #23c7bf;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-size: 1.3rem; */
+  /* letter-spacing: 0.2em; */
+  text-align: center;
+  color: snow;
+  padding: 30px 20px 30px 20px;
+  display: inline;
+  margin: 0 0 30px 0;
+  transition: 0.8s;
+  border: 5px solid teal;
+}
 
-  .main-heading, .main-heading:hover {
-    font-size: 0.8rem;
+hr {
+  margin: 0 40px;
+}
+
+.about-us {
+  margin: 5vw 10vw 10vw 10vw;
+  padding: 20px;
+  transition: 2s;
+}
+
+.about-us:hover {
+  margin: 5vw 10vw 10vw 10vw;
+  padding: 20px;
+  font-size: 200%;
+  transition: 2s;
+}
+
+.about-us h2 {
+  margin: 20px;
+}
+
+.subtitle {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.p-intro {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 2vh 30px 50px 30px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-heading {
+    border: 10px solid transparent;
+  }
+
+  .main-heading:hover {
+    font-size: 0.5rem;
   }
 
   ul {
     list-style: none;
-    line-height: 110%;
+    line-height: 200%;
   }
 
   ul:hover {
     list-style: none;
+    line-height: 200%;
   }
 
   a {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     text-decoration: none;
     color: aliceblue;
     margin: 0 30px 0 0 ;
+  }
+
+  .main-heading h1:active {
+    letter-spacing: 3em;
+    display: inline-block;
+    border: 10px solid cyan;
+    /*padding: 30px;
+    border-radius: 100px; */
   }
 
 }
