@@ -17,7 +17,7 @@ html, body {
 
 a {
   display: flex;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   color: aliceblue;
   margin: 0 30px 0 0 ;
@@ -26,9 +26,9 @@ a {
 
 a:hover {
   display: flex;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   color: black;
-  font-weight: bold;
+  font-weight: 800;
   font-style: italic;
   background-color: yellow;
   padding: 1vw 3vw 12px 1px;
@@ -50,9 +50,9 @@ ul:hover {
 
 .main-heading {
   background-color: #1ea39d;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   text-align: center;
-  color: darkslategray;
+  color: snow;
   padding: 10vh;
   margin: 0 0 40px 0;
   transition: 0.8s;
@@ -61,7 +61,7 @@ ul:hover {
 
 .main-heading:hover {
   background-color: #23c7bf;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.8rem;
   letter-spacing: 0.2em;
   text-align: center;
@@ -74,8 +74,9 @@ ul:hover {
 
 .main-heading:active {
   background-color: #00fff2;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 0.4em;
+  font-family: 'Source Code Pro', monospace;
+  /* letter-spacing: 0.2em; */
+  font-size: 1.5rem;
   text-align: center;
   color: darkslategrey;
   padding: 120px;
@@ -83,9 +84,9 @@ ul:hover {
   transition: 0.8s;
 }
 
-.main-heading > h1:hover {
+/* .main-heading > h1:hover {
   background-color: #23c7bf;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   /* font-size: 1.3rem; */
   /* letter-spacing: 0.2em; */
   text-align: center;
@@ -94,8 +95,7 @@ ul:hover {
   display: inline;
   margin: 0 0 30px 0;
   transition: 0.8s;
-  border: 5px solid teal;
-}
+} */
 
 hr {
   margin: 0 40px;
@@ -119,14 +119,14 @@ hr {
 }
 
 .subtitle {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: bolder;
 }
 
 .p-intro {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   margin: 2vh 30px 50px 30px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 600px) {
@@ -154,14 +154,6 @@ hr {
     text-decoration: none;
     color: aliceblue;
     margin: 0 30px 0 0 ;
-  }
-
-  .main-heading h1:active {
-    letter-spacing: 3em;
-    display: inline-block;
-    border: 10px solid cyan;
-    /*padding: 30px;
-    border-radius: 100px; */
   }
 
 }
